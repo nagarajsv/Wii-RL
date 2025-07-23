@@ -292,6 +292,7 @@ class Agent:
         
         # Reset episode counters
         self.current_episode_hits = 0
+        self.current_episode_swings = 0
     
     def log_training_metrics(self, loss_value: float):
         """Log training-specific metrics to TensorBoard"""
