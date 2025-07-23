@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
-from NoisyLinear import NoisyLinear
+from networks.NoisyLinear import NoisyLinear
 
 class RainbowDQN(nn.Module):
     def __init__(self, input_dim: tuple[int, int, int], output_dim: int, n_atoms: int = 51, v_min: float = -10, v_max: float = 10):

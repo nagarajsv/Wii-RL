@@ -5,8 +5,8 @@ import locale
 locale.setlocale(locale.LC_ALL, 'en_US')
 
 from dolphin import event # type: ignore
-from batting_env import BattingEnv
-from rainbow_agent_log import Agent
+from batting.batting_env import BattingEnv
+from batting.rainbow_agent_log import Agent
 
 await event.frameadvance()
 
